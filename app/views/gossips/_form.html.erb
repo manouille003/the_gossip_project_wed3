@@ -1,5 +1,5 @@
-<%= form_with(model: gossip) do |form| %>
-  <% if gossip.errors.any? %>
+<%= form_with(model: @gossip) do |form| %>
+  <% if @gossip.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(gossip.errors.count, "error") %> prohibited this gossip from being saved:</h2>
 

@@ -8,6 +8,7 @@ class GossipsController < ApplicationController
 
   # GET /gossips/1 or /gossips/1.json
   def show
+    @gossip = Gossip.find(params[:id])
   end
 
   # GET /gossips/new
@@ -17,6 +18,7 @@ class GossipsController < ApplicationController
 
   # GET /gossips/1/edit
   def edit
+    @gossip = Gossip.find(params[:id])
   end
 
   # POST /gossips or /gossips.json
